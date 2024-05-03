@@ -9,6 +9,7 @@ import lingustica from '../../image/lingustica.png';
 import reserve from '../../image/reserve.png';
 import bento from '../../image/bento.png';
 import licence from '../../image/licence.png';
+import tensorflow from '../../image/tensorflow.png';
  
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
@@ -161,8 +162,7 @@ function Projets({ typeProjet, titreProjet, id, source }) {
           <Projets typeProjet={figma} titreProjet={"Reserve - Mobile Design"} source={reserve} id={2} />
           <Projets typeProjet={git} titreProjet={"Bento - Web App"} source={bento} id={3} />
           <Projets typeProjet={git} titreProjet={"Licence Plate Recognation - AI"} source={licence} id={4} />
-          <Projets typeProjet={git} titreProjet={"Bento - Web App"} source={bento} id={5} />
-          <Projets typeProjet={figma} titreProjet={"Lingusticas - Creative direction, UX/UI"} source={lingustica} id={6} />
+          <Projets typeProjet={git} titreProjet={"Tensorflow Training"} source={tensorflow} id={5} />
         </div>
       </div>
     )
