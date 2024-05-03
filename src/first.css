@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Sunshower Dreams'; /* Specify your custom font family name */
-    src: url('./fonts/SunshowerDreams.otf') format('truetype'); /* Path to your font file */
+    src: url('./SunshowerDreams.otf') format('truetype'); /* Path to your font file */
     /* Add more src declarations for other font file formats if available */
   }
 body{
