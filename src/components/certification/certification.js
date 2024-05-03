@@ -5,7 +5,7 @@ import { MotionPathPlugin } from "gsap/all";
 import arrow from '../../image/Arrow.png';
 import './certification.css';
 
-function Certification({ link, tag1, tag2, titre, backgroundColor }) {
+function Certification({ link, tag1, tag2, titre, backgroundColor, navigation }) {
     const certificationStyle = {
       backgroundColor: backgroundColor || 'initial',
     };
@@ -33,13 +33,15 @@ function Certification({ link, tag1, tag2, titre, backgroundColor }) {
       });
     }, []);
     
-  
+    const handleClick = () => {
+      window.location.href = navigation;
+    };
     return (
       <section className="main">
         <div ref={el => (cont = el)} className='certificationbloc' style={certificationStyle}>
         <>
           <div ref={el => (image = el)} className="certificationbloc-container">
-            <button className='cerficationLink'>
+            <button className='cerficationLink' onClick={handleClick} >
               {link} <img className='arrowCertification' src={arrow} alt={arrow} />
             </button>
             <div className='tags'>
@@ -58,11 +60,11 @@ function Certification({ link, tag1, tag2, titre, backgroundColor }) {
 const Ceertification = forwardRef((props, certificationRef) => {
     return(
     <div ref={certificationRef} className='certification'>
-        <Certification link={"LINK TO PROFILE"} tag1={"#AI"} tag2={"#CERITIFCATE"} titre={"COURSERA"} backgroundColor="#2A86FF"/>
-        <Certification link={"LINK TO GITHUB"} tag1={"#FIREBASE"} tag2={"#MOBILEAPP"} titre={"YOUTHMOBILE."} backgroundColor="#9302FF"/>
-        <Certification link={"LINK TO PROJECT "} tag1={"#COMPETITION"} tag2={"#FIRSTPLACE"} titre={"DEVHUNT"} backgroundColor="#A5E314"/>
+        <Certification navigation={"https://coursera.org/share/3a18e4f1bff1dc8342c329d2d4849207"} link={"LINK TO PROFILE"} tag1={"#AI"} tag2={"#CERITIFCATE"} titre={"COURSERA"} backgroundColor="#2A86FF"/>
+        <Certification navigation={"https://github.com/TOLOJANAHAR/.Kopia"} link={"LINK TO GITHUB"} tag1={"#FIREBASE"} tag2={"#MOBILEAPP"} titre={"YOUTHMOBILE."} backgroundColor="#9302FF"/>
+        <Certification navigation={"https://github.com/TOLOJANAHAR/Licence-Plate-Detection"} link={"LINK TO PROJECT "} tag1={"#LICENCE PLATE"} tag2={"#DETECTION"} titre={"INTERSHIP"} backgroundColor="#A5E314"/>
     </div>
     )
   });
 
-  export default Ceertification;
+export default Ceertification;
