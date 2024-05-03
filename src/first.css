@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Sunshower Dreams'; /* Specify your custom font family name */
+    src: url('./fonts/SunshowerDreams.otf') format('truetype'); /* Path to your font file */
+    /* Add more src declarations for other font file formats if available */
+  }
+body{
+    font-family: 'Sunshower Dreams', Arial; 
+}
 .navnoirContent{
     display: inline-flex;
     justify-content: center;
