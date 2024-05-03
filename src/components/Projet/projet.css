@@ -1,0 +1,138 @@
+.bloc{
+    display: inline-flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-bottom: 1px solid #000;
+    height: 100px;
+    margin-top: 0px;
+    /* border: 1px solid red; */
+}
+
+.bloc {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+.typeProjet{
+    height: 40px;
+    width: 40px;
+}
+.titreProjet{
+    color: #000;
+    font-family: Century Gothic;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    padding-left: 30px;
+    /* border: 1px solid red; */
+    width: 500px;
+}
+.imagepro{
+    width: 250px;
+    height: 300px;
+    opacity: 0;
+}
+.lienContact {
+    display: inline-flex;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: transparent;
+    margin-left: auto;
+    top: 0;
+    font-family: Arial;
+    font-weight: 600;
+    background: white;
+  }
+
+.lock{
+    height: 20px;
+    width: 20px;
+}
+
+.bloctitreProjet{
+    width: 1420px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* border: 1px solid red; */
+    height: 60px;
+    padding-top: 50px;
+    padding-bottom: -10px;
+    border-bottom: 1px solid #000;
+    background-color: white;
+}
+.FirsttitreProjet{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* border: 1px solid red; */
+    height: 50px;
+    margin-left: 50px;
+}
+.fleche{
+    width: 31px;
+    height: 25px;
+}
+/* .Projects{
+    border: 1px solid red;
+} */
+.texteProjet{
+    color: #000;
+    font-family: Century Gothic; 
+    font-size: 45px;
+    font-weight: 600;
+}
+#image{
+    height: 100px;
+    width: 100px;
+    opacity: 0;
+    transition: 0ms;
+}
+.projects_content{
+    margin-top: -50px;
+}
+@media screen and (max-width: 600px) {
+    .typeProjet{
+        height: 30px;
+        width: 30px;
+    }
+    .titreProjet{
+        font-size: 14px ;
+        width: 100px;
+        text-align: left;
+        width: 150px;
+    }
+    .imagepro{
+        height: 200px;
+        width: 150px;
+    }
+    .bloctitreProjet{
+        margin-left: 15px;
+        width: 535px;
+        margin-left: 10px;
+        margin-right: 0px;
+        height: 60px;
+
+    }
+    .bloc{
+        margin-left: 15px;
+        width: 490px;
+    }
+    .lock{
+        height: 17px;
+        width: 17px;
+    }
+    .lienContact{
+        font-weight: 800;
+        font-size: 6px;
+        height: 40px;
+        width: 110px;
+    }
+} 

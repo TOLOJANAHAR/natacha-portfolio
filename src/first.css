@@ -1,0 +1,181 @@
+.navnoirContent{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.linknav{
+    color: #FFF;
+    font-family: century gothic;
+    font-size: 12px;
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid transparent;
+}
+.linknav:hover{
+    cursor:pointer;
+}
+.navbar{
+    width: 450px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #0e0e0e;
+    display: inline-flex;
+    padding: 8px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: fixed;
+    bottom: 0;
+    margin-left: 550px;
+    margin-bottom: 15px;
+    border: 4px solid rgb(33, 33, 33);
+    opacity: 0;
+    z-index: 3;
+}
+.navbar-visible{
+    opacity: 1;
+}
+.logon{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* *,::before,::after{
+    transition: all 0.8s ease-in-out;
+} */
+::selection{
+    background-color: #A5E314;
+    color: rgb(226, 226, 226);
+}
+.expbox{
+    /* background-color: red; */
+    border-radius: 20px;
+    border: 1px solid #000;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow: hidden;
+    background-color: white;
+    height: 0px;
+}
+.experiences{
+    /* border-radius: 20px;
+    border: 1px solid #000; */
+    color: #000;
+    opacity: 1;
+    font-family: Arial;
+    font-size: 80px;
+    font-weight: 500;
+    display: flex;
+    white-space: nowrap;
+    margin-top: 10px;
+    /* padding: 10px 5px; */
+}
+#image{
+    height: 100px;
+    width: 100px;
+    opacity: 0;
+    transition: 0ms;
+}
+.award{
+    color: white;
+    font-family: Arial;
+    font-size: 70px;
+    white-space: nowrap;
+    animation: RightToLeft 7s infinite linear;
+    margin-top: 20px;
+
+}
+.awardScroll{
+    overflow:hidden;
+    border-radius: 10px;
+    background-color: #000;
+    height: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.links {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    color: #000;
+    font-family: Century Gothic;
+    font-size: 25px;
+    background: transparent;
+    padding: 10px 20px;
+    transition: 0.8s;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+}
+.arrowlink{
+    width: 15px;
+    height: 15px;
+}
+.links:hover{
+    color: #fff;
+    padding-left: 90px;
+    padding-right: 90px;
+    background: black;
+}
+.links::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #000;
+    z-index: -1;
+    transition: 1s;
+    top: 0;
+    border-radius: 0 0 0% 0% ;
+}
+.links:hover::before{
+    height: 180%;
+}
+.arrowblack {
+    margin-left: auto; 
+    width: 15px;
+    height: 15px;
+}
+.listeProjet{
+    margin-top: 50px;
+}
+
+@keyframes RightToLeft{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .awardScroll{
+        margin-left: 25px;
+        width: 450px;
+    }
+    .navbar{
+        margin-left: 100px;
+        gap: 5px;
+        width: 380px;
+    }
+    .linknav{
+        font-size: 10px;
+    }
+  }
+

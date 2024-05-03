@@ -1,0 +1,88 @@
+.main{
+    .certificationbloc {
+        width: 450px;
+        height: 360px;
+        border-radius: 10px;
+        margin-right: 5px;
+        display: flex;
+        margin-left: 5px;
+        overflow: hidden;
+        padding-left: 10px;
+      }
+}
+.arrowCertification{
+    height: 20px;
+    width: 22px;
+    margin-left: 15px;
+}
+  .certificationbloc-container {
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+    padding: 0px 10px;
+  }
+.cerficationLink{
+    color: #FFF;
+    font-family: Arial;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: transparent;
+    border-color: transparent;
+    margin-top: 20px;
+}
+
+.tags{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column; 
+    align-items:baseline;
+    margin-top: 100px; 
+}
+.tag1, .tag2{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+    color: #000;
+    font-family: Arial;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+}
+.titrecertificat{
+    color: #FFF;
+    font-family: Arial;
+    font-size: 55px;
+    margin-top: 0px;
+    font-weight: 100;
+
+}
+.certification{
+    display: inline-flex;
+    align-items: center;
+    margin-top: -50px;
+    margin-left: 10px;
+    gap: 20px;
+}
+.certificationbloc:hover{
+    .tag1{
+        background-color: #000;
+        color: white;
+        transition: 0.5ms;
+    }
+    .tag2{
+        background-color: #000;
+        color: white;
+        transition: 0.5ms;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .certification{
+        margin-top: -10px;
+        display: flex;
+        flex-direction: column;
+    }
+  }

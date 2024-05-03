@@ -1,0 +1,80 @@
+
+// const Ballon = ({ text, color }) => {
+//   const ballonRef = useRef(null);
+//   const [isDragging, setDragging] = useState(false);
+//   const [position, setPosition] = useState({ x: 0, y: 0 });
+
+
+//   const handleMouseDown = () => {
+//     setDragging(true);
+//   };
+
+//   const handleMouseUp = () => {
+//     setDragging(false);
+//   };
+  
+//   const handleMouseMove = (e) => {
+//     if (isDragging) {
+//       const rect = ballonRef.current.getBoundingClientRect();
+//       const newX = e.clientX - rect.width / 2;
+//       const newY = e.clientY - rect.height / 2;
+
+//       setPosition({ x: newX, y: newY });
+//     }
+//   };
+//   useEffect(() => {
+//     let interval;
+  
+//     const moveDown = () => {
+//       setPosition((prevPos) => ({ ...prevPos, y: prevPos.y + 1 }));
+//     };
+  
+//     if (!isDragging) {
+//       interval = setInterval(moveDown, 10);
+//     }
+
+//     return () => clearInterval(interval);
+//   }, [isDragging]);
+
+//   useEffect(() => {
+//     const handleCollision = () => {
+//       const rect = ballonRef.current.getBoundingClientRect();
+//       const windowHeight = window.innerHeight;
+
+//       if (position.y + rect.height >= windowHeight) {
+//         setDragging(true);
+//       }
+//     };
+
+//     window.addEventListener("scroll", handleCollision);
+
+//     return () => {
+//       window.removeEventListener("scroll", handleCollision);
+//     };
+//   }, [position.y]);
+
+//   return (
+//     <button
+//       ref={ballonRef}
+//       style={{
+//         backgroundColor: color, // Utilisez la couleur passée en tant que prop
+//         width: "300px",
+//         height: "100px",
+//         borderRadius: "25px",
+//         cursor: "grab",
+//         position: "sticky",
+//         left: `${position.x}px`,
+//         top: `${position.y}px`,
+//         boxShadow: "-15px -10px 50px 0px rgba(255, 255, 255, 0.40) inset",
+//         border: "1px solid transparent",
+//         color: "Black", 
+
+//       }}
+//       onMouseDown={handleMouseDown}
+//       onMouseUp={handleMouseUp}
+//       onMouseMove={handleMouseMove}
+//     >
+//       {text}
+//     </button>
+//   );
+// };

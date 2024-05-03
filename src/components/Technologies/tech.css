@@ -1,0 +1,136 @@
+.Technologie{
+    display: flex;
+    width: 600px;
+    height: 150px;
+    padding: 30px 100px;
+    align-items: center;
+    gap: 36px;
+    flex-shrink: 0;
+    border:transparent;
+    border-top:1px solid white;
+    background: #000;
+    color: #FFF;
+    font-family: Arial;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+.arrowTwo{
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+}
+.Tech{
+    display: flex;
+    /* width: 1365px; */
+    height: auto;
+    padding: 150px 80px 50px 70px;
+    /* align-items: flex; */
+    gap: 64px;
+    background: #000;
+    position: absolute;
+    margin-top: 20px;
+    z-index: 2;
+    /* border:1px solid  red; */
+}
+
+
+.TechGauche{
+    margin-left: 100px;
+}
+.TechDroite{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.TechDroiteHaut{
+    color: #FFF;
+    font-family: Arial;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 600px;
+    /* border: 1px solid red; */
+    margin-top: -20px;
+}
+.TechDroiteBas{
+    margin-top: -20px;
+    color: #FFF;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    /* border: 1px solid red; */
+    width: 378px;
+    height: 88px;
+}
+.giiiif{
+    margin-top: 250px;
+    /* border: 1px solid red; */
+    width: 600px;
+    overflow: hidden;
+
+}
+.gifContent{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* border: 1px solid red; */
+    animation: RightToLeft 4s infinite linear;
+    white-space: nowrap;
+}
+@keyframes gifContent{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.gif{
+    width: 150px;
+    height: 70px;
+    border-radius: 20px;
+}
+.callMeTexte{
+    color: #FFF;
+    font-family: Arial;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+@media screen and (max-width: 600px) {
+    .Tech{
+        display: flex;
+        flex-direction: column;
+        width: 410px;
+        
+    }
+    .TechDroiteHaut{
+        font-size: 40px;
+        width: 350px;
+    }
+    .TechDroiteBas{
+        font-size: 15px;
+        width: 250px;
+    }
+    .giiiif{
+        margin-top:-10px ;
+    }
+    .TechGauche{
+        margin-left: 0px;
+    }
+    .Technologie{
+        font-size: 30px;
+        padding: 20px 10px;
+        width: 400px;
+    }
+    .arrowTwo{
+        height: 50px;
+        width: 50px;
+    }
+}
