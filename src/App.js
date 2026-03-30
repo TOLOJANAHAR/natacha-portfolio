@@ -20,21 +20,18 @@ export default function App() {
   const navbar = useRef();
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
-      //GSAP
+      //GSAP tech
       gsap.to(".Tech", {
         scrollTrigger: {
           trigger: ".Tech",
-          start: "80% 90%",
-          end: "90% 50%",
-          scrub: 4,
-          //markers: true,
-          //pinSpacing: false,
+          start: "95% 75%",
+          end: "95% 30%",
+          scrub: 2,
           toggleActions: "restart pause reverse pause"
         },
-        width: 1350,
-        marginLeft: 10,
+        // width: '80%',
         borderRadius: '50px',
-        y:-1650
+        y:-100
       });
 
       //GSAP award

@@ -22,7 +22,7 @@ function Certification({ link, tag1, tag2, titre, backgroundColor, navigation })
           scrub: 2 
         }
       });
-      gsap.fromTo(image, { opacity: 0 }, { opacity: 1, duration: 0.5, width: "440px",
+      gsap.fromTo(image, { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.out",
         scrollTrigger: {
           trigger: cont,
           start: "50% 89%",
@@ -42,6 +42,7 @@ function Certification({ link, tag1, tag2, titre, backgroundColor, navigation })
         <>
           <div ref={el => (image = el)} className="certificationbloc-container">
             <button className='cerficationLink' onClick={handleClick} >
+              
               {link} <img className='arrowCertification' src={arrow} alt={arrow} />
             </button>
             <div className='tags'>

@@ -19,16 +19,16 @@ function Link({titre, link}){
 const Footer = forwardRef((props, footerRef) => {
     return(
     <div ref={footerRef} className='footer'>
-      <p className='nom'>TOLOJANAHARY NOELINE NATACHA</p>
+      <p className='nom'>TOLOJANAHARY <br /> NOELINE NATACHA</p>
       <div className='footer_down'>
 
         <div className='textes'>
           <p className='seeya'>
-            See ya!!
-            <img className='call' src={call} alt='call'/>
+            Call me 🤙!!
           </p>
           <p className='texteHope'>Hope you know me better now, feel free to contact.</p>
         </div>
+
 
         <div className='contenueLinks'>
           <div className='linkHaut'>

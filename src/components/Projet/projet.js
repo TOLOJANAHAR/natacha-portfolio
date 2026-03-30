@@ -63,10 +63,12 @@ function Projets({ typeProjet, titreProjet, id, source }) {
             onEnter: () => {
               gsap.set(`#image-${id}`, {
                 opacity: 1,
-                y: 10
+                y: 10,
+            
               });
               gsap.set(`#textee-${id}`, { 
                 color: "white"
+
               });
             },
             onEnterBack: () => {
@@ -164,7 +166,7 @@ function Projets({ typeProjet, titreProjet, id, source }) {
           <Projets typeProjet={git} titreProjet={"Licence Plate Recognation - AI"} source={licence} id={4} />
           <Projets typeProjet={git} titreProjet={"Tensorflow Training"} source={tensorflow} id={5} />
         </div>
-      </div>
+    </div>
     )
   });
 

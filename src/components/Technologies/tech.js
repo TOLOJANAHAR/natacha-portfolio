@@ -1,6 +1,5 @@
 import './tech.css';
 import arrowTwo from '../../image/arrowtwo.png';
-import callMe from '../../image/callMe.gif';
 function Technologies({texte}){
     return(
       <button className='Technologie'>
@@ -20,21 +19,14 @@ export default function Technologie(){
           <p className='TechDroiteBas'>
           I use them for IA models, website developpement, and creative design.
           </p>
-          <div className='giiiif'>
-            <span className='gifContent'>
-              <img className="gif"src={callMe} alt={callMe}/>
-              <p className='callMeTexte'>CALL ME</p>
-              <img className="gif"src={callMe} alt={callMe}/>
-              <p className='callMeTexte'>CALL ME</p>
-            </span>
-          </div>
           
         </div>
         <div className='TechGauche'>
-            <Technologies texte={"TENSORFLOW"} />
+            <Technologies texte={"Figma"} />
+            <Technologies texte={"ADOBE XD"} />
             <Technologies texte={"REACT JS"} />
-            <Technologies texte={"SPRING BOOT"} />
-            <Technologies texte={"UI/UX DESIGN"} />
+            <Technologies texte={"GRASP"} />
+            
         </div>
     </div>
     )

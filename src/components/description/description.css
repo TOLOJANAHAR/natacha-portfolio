@@ -1,7 +1,6 @@
 .description{
     width:auto;
     height: 700px;
-    /* border: 1px solid red; */
     border-radius: 25px;
     background-color: #000;
     color: white;
@@ -16,6 +15,7 @@
     flex-shrink: 0;
     display: flex;
 }
+
 .petitDescription{
     width: 400px;
     height: 60px;
@@ -36,16 +36,13 @@
     line-height: normal;
 }
 
-.scroll-reveal span{
-    color: hsl( 0 0% 100% /0.2);
+.scroll-reveal span {
+    color: hsl(0 0% 100% / 0.2);
     background-clip: text;
     background-repeat: no-repeat;
     background-size: 0% 100%;
     background-image: linear-gradient(90deg, white, white);
-    animation: scroll-reveal linear forwards;
-    animation-timeline: view();
-    transition: background-size 60s ease;
-
+    transition: background-size 0.2s linear; 
 }
 .scroll-reveal p span{
     animation-range-start: cover 20vh;
