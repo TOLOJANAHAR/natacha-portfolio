@@ -123,7 +123,7 @@ export default function App() {
         <img className='logon' src={logoo} alt={logoo}/>
         <div className='navnoirContent'>
           <NavNoir titre={"About"} onClick={aboutPart} />
-          <NavNoir titre={"Work"} onClick={projetPart} />
+          <NavNoir titre={"Works"} onClick={projetPart} />
           <NavNoir titre={"Experiences"} onClick={certPart} />
           <NavNoir titre={"Contacts"} onClick={footerPart} />
         </div>

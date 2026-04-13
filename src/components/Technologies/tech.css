@@ -96,7 +96,8 @@
     .Tech{
         display: flex;
         flex-direction: column;
-        width: 93.9%;
+        width: 82%; 
+        /* 93,9 */
         
     }
     .TechDroiteHaut{
@@ -116,7 +117,8 @@
     .Technologie{
         font-size: 30px;
         padding: 20px 10px;
-        width: 400px;
+        width: 300px;
+        /* border: 1px solid red; */
     }
     .arrowTwo{
         height: 50px;

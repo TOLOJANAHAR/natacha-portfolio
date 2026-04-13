@@ -30,12 +30,13 @@ function Projets({ typeProjet, titreProjet, id, source }) {
   };
     return (
       <div className='bloc' id={`bbloc-${id}`}>
-        <img className='typeProjet' src={typeProjet} alt={typeProjet}
-          style={{ borderRight: '1px solid #000', paddingRight: '10px' }} />
-        <p className='titreProjet'id={`textee-${id}`} >{titreProjet}</p>
-        <img className="imagepro" id={`image-${id}`} src={source} alt={"sary"} />
+          <img className='typeProjet' src={typeProjet} alt={typeProjet}
+            style={{ borderRight: '1px solid #000', paddingRight: '10px' }} />
+          <p className='titreProjet'id={`textee-${id}`} >{titreProjet}</p>
+          <img className="imagepro" id={`image-${id}`} src={source} alt={"sary"} />
+
         <button className='lienContact'onClick={sendMessage} >
-          <img className='lock'  src={lock} alt={lock} /> CONTACT FOR DETAILS
+          <img className='lock'  src={lock} alt={lock} /> CONTACT <br/> FOR DETAILS
         </button>
       </div>
     );
@@ -167,7 +168,7 @@ function Projets({ typeProjet, titreProjet, id, source }) {
         <div ref={listProjet} className="listeProjet">
           <Projets typeProjet={figma} titreProjet={"Hype POS"} source={hype} id={1} />
           <Projets typeProjet={figma} titreProjet={"World Psychiatry Association"} source={wpa} id={2} />
-          <Projets typeProjet={figma} titreProjet={"Cupidon"} source={cupidon} id={3} />
+          {/* <Projets typeProjet={figma} titreProjet={"Cupidon"} source={cupidon} id={3} /> */}
           <Projets typeProjet={figma} titreProjet={"Transverse"} source={transverse} id={4} />
           <Projets typeProjet={figma} titreProjet={"SSG SWISS"} source={ssg} id={5} />
           <Projets typeProjet={figma} titreProjet={"Lingusticas"} source={lingustica} id={6} />

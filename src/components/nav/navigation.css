@@ -299,10 +299,9 @@
     .link-content-down{
         display: flex;
         flex-direction: column;
-        width:200px;
-        margin-left: -10px;
-        padding-top: 30px;
-        padding-left: 150px;
+        justify-content: center;   /* centre horizontalement */
+        align-items: center;       /* centre verticalement */
+        width:93%;
     }
     .close{
         margin-top: -20px;
