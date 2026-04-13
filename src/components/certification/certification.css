@@ -24,7 +24,7 @@
 
   }
 .cerficationLink{
-    color: #FFF;
+    color: #000000;
     font-family: Arial;
     font-size: 28px;
     font-style: normal;
@@ -43,8 +43,8 @@
     margin-top: 100px; 
 }
 .tag1, .tag2{
-    padding: 10px 15px;
-    border-radius: 10px;
+    padding: -50px 15px;
+    border-radius: 5px;
     border: 1px solid #000;
     background: #FFF;
     color: #000;
@@ -52,14 +52,19 @@
     display: inline-block;
     font-size: 15px;
     font-weight: 600;
+    padding: 5px;
 }
 .titrecertificat{
-    color: #FFF;
+    color: #000000;
     font-family: Arial;
     font-size: 45px;
     margin-top: 0px;
     font-weight: 100;
 
+}
+.cerficationLink:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
 }
 .certification{
     display: flex;             /* layout horizontal ou vertical selon besoin */
@@ -67,7 +72,7 @@
     align-items: center;
     justify-content: space-between; /* espace automatique entre les éléments */
     width: 94%;                /* prend presque toute la largeur */
-    margin: -50px auto 0 auto; /* centré horizontalement avec margin auto */
+    margin: 10px auto 0 auto; /* centré horizontalement avec margin auto */
     box-sizing: border-box;
     gap: 0;  
     padding-top: 30px;

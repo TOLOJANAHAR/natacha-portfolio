@@ -2,11 +2,12 @@ import React, { useRef, useEffect,forwardRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { MotionPathPlugin } from "gsap/all";
-import arrow from '../../image/Arrow.png';
+import arrow from '../../image/arrowblack.png';
 import './certification.css';
 
 function Certification({ link, tag1, tag2, titre, backgroundColor, navigation }) {
     const certificationStyle = {
+      border: "1px solid black",
       backgroundColor: backgroundColor || 'initial',
     };
     let cont = useRef(null);
@@ -18,7 +19,6 @@ function Certification({ link, tag1, tag2, titre, backgroundColor, navigation })
           trigger: cont,
           start: "50% 89%",
           end: "bottom 80%",
-          //markers:true,
           scrub: 2 
         }
       });
@@ -27,7 +27,6 @@ function Certification({ link, tag1, tag2, titre, backgroundColor, navigation })
           trigger: cont,
           start: "50% 89%",
           end: "bottom 80%",
-         // markers:true,
           scrub: 2
         }
       });
@@ -42,7 +41,6 @@ function Certification({ link, tag1, tag2, titre, backgroundColor, navigation })
         <>
           <div ref={el => (image = el)} className="certificationbloc-container">
             <button className='cerficationLink' onClick={handleClick} >
-              
               {link} <img className='arrowCertification' src={arrow} alt={arrow} />
             </button>
             <div className='tags'>
@@ -60,10 +58,18 @@ function Certification({ link, tag1, tag2, titre, backgroundColor, navigation })
 
 const Ceertification = forwardRef((props, certificationRef) => {
     return(
-    <div ref={certificationRef} className='certification'>
-        <Certification navigation={"https://coursera.org/share/3a18e4f1bff1dc8342c329d2d4849207"} link={"LINK TO PROFILE"} tag1={"#AI"} tag2={"#CERITIFCATE"} titre={"COURSERA"} backgroundColor="#2A86FF"/>
-        <Certification navigation={"https://github.com/TOLOJANAHAR/.Kopia"} link={"LINK TO GITHUB"} tag1={"#FIREBASE"} tag2={"#MOBILEAPP"} titre={"YOUTHMOBILE."} backgroundColor="#9302FF"/>
-        <Certification navigation={"https://github.com/TOLOJANAHAR/Licence-Plate-Detection"} link={"LINK TO PROJECT "} tag1={"#LICENCE PLATE"} tag2={"#DETECTION"} titre={"INTERSHIP"} backgroundColor="#A5E314"/>
+    <div>
+      <div ref={certificationRef} className='certification'>
+          <Certification navigation={"https://www.figma.com/proto/B7ALOCrKDzjB9fszN8kKBZ?node-id=0-1&t=cVDxAmZ30KtGxiOv-6"} link={"LINK TO DESIGN"} tag1={"#FREELANCE"} tag2={"#DESIGNER"} titre={"FLUXGROUP"} backgroundColor="#ffffff"/>
+          <Certification navigation={"https://www.hypeswiss.ch/"} link={"LINK TO WEBSITE"} tag1={"#HYPESWISS"} tag2={"#DESIGNER"} titre={"HYPESWISS"} backgroundColor="#ffffff"/>
+          <Certification navigation={"https://www.wpanet.org/"} link={"LINK TO WEBSITE"} tag1={"#DESIGN"} tag2={"#WPA"} titre={"WORLD PSY"} backgroundColor="#ffffff"/>
+          {/* <Certification navigation={"https://keypredict.com/"} link={"LINK TO WEBSITE "} tag1={"#FREELANCE"} tag2={"#DESIGNER"} titre={"KEYPREDICT"} backgroundColor="#ffffff"/> */}
+      </div>
+      {/* <div ref={certificationRef} className='certification'>
+          <Certification navigation={"https://www.figma.com/proto/B7ALOCrKDzjB9fszN8kKBZ?node-id=0-1&t=cVDxAmZ30KtGxiOv-6"} link={"LINK TO DESIGN"} tag1={"#FREELANCE"} tag2={"#DESIGNER"} titre={"FLUXGROUP SARL"} backgroundColor="#ffffff"/>
+          <Certification navigation={"https://www.figma.com/design/tGVhM1Hy2nDHjqCuJb7OHy/Transverse?m=auto&t=cVDxAmZ30KtGxiOv-6"} link={"LINK TO DESIGN"} tag1={"#DESIGN"} tag2={"#MOBILEAPP"} titre={"TRANSVERSE"} backgroundColor="#ffffff"/>
+      </div> */}
+
     </div>
     )
   });

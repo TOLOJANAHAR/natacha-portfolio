@@ -10,6 +10,11 @@ import reserve from '../../image/reserve.png';
 import bento from '../../image/bento.png';
 import licence from '../../image/licence.png';
 import tensorflow from '../../image/tensorflow.png';
+import wpa from '../../image/wpa.jpg'
+import hype from '../../image/hype.jpg'
+import cupidon from '../../image/cupidon.png'
+import transverse from '../../image/transverse.png'
+import ssg from '../../image/ssg.png'
  
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
@@ -160,11 +165,16 @@ function Projets({ typeProjet, titreProjet, id, source }) {
           </div>
         </div>
         <div ref={listProjet} className="listeProjet">
-          <Projets typeProjet={figma} titreProjet={"Lingusticas - Creative direction, UX/UI"} source={lingustica} id={1} />
-          <Projets typeProjet={figma} titreProjet={"Reserve - Mobile Design"} source={reserve} id={2} />
-          <Projets typeProjet={git} titreProjet={"Bento - Web App"} source={bento} id={3} />
-          <Projets typeProjet={git} titreProjet={"Licence Plate Recognation - AI"} source={licence} id={4} />
-          <Projets typeProjet={git} titreProjet={"Tensorflow Training"} source={tensorflow} id={5} />
+          <Projets typeProjet={figma} titreProjet={"Hype POS"} source={hype} id={1} />
+          <Projets typeProjet={figma} titreProjet={"World Psychiatry Association"} source={wpa} id={2} />
+          <Projets typeProjet={figma} titreProjet={"Cupidon"} source={cupidon} id={3} />
+          <Projets typeProjet={figma} titreProjet={"Transverse"} source={transverse} id={4} />
+          <Projets typeProjet={figma} titreProjet={"SSG SWISS"} source={ssg} id={5} />
+          <Projets typeProjet={figma} titreProjet={"Lingusticas"} source={lingustica} id={6} />
+          <Projets typeProjet={figma} titreProjet={"Reserve"} source={reserve} id={7} />
+          <Projets typeProjet={git} titreProjet={"Bento "} source={bento} id={8} />
+          <Projets typeProjet={git} titreProjet={"Licence Plate Recognation "} source={licence} id={9} />
+          <Projets typeProjet={git} titreProjet={"Tensorflow Training"} source={tensorflow} id={10} />
         </div>
     </div>
     )

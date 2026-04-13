@@ -29,11 +29,13 @@ const Description = forwardRef((props, ref) => {
       <section className='scroll-reveal' data-speed="1">
         <p>
           <span ref={spanRef}>
-            I'm an UI/UX designer, a Frontend and AI Developper.
-            My creativity and my experiences will realize your needed into reality.  
+            I'm an UI/UX designer, my goal is to craft digital experiences 
+            that blend creativity and frontend expertise to turn ideas 
+            into reality.
+          
           </span>
         </p>
-        <p className='petitDescription'>Don't hesitate to contact me, let's collaborate.</p>
+        <p className='petitDescription'> And not only that ... see below 👇 </p>
       </section>
     </div>
   );

@@ -124,14 +124,14 @@ export default function App() {
         <div className='navnoirContent'>
           <NavNoir titre={"About"} onClick={aboutPart} />
           <NavNoir titre={"Work"} onClick={projetPart} />
-          <NavNoir titre={"Awards"} onClick={certPart} />
+          <NavNoir titre={"Experiences"} onClick={certPart} />
           <NavNoir titre={"Contacts"} onClick={footerPart} />
         </div>
       </div>
       < Nav />
       < Description ref={aboutToRef}/>
       <div className='expbox'>
-        <p className='experiences'>ECE🔥EXPRERIENCE🔥EXPERIENCE🔥EXPERIENCE🔥EXPERIENCE🔥</p>
+        <p className='experiences'>ECES🔥EXPRERIENCES🔥EXPERIENCES🔥EXPERIENCES🔥EXPERIENCES🔥</p>
       </div>
       < Projet ref={projetToRef} />
       <div className='awardScroll'>

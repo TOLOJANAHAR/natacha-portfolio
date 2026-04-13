@@ -1,148 +1,117 @@
-.nom{
-    color: #000;
-    font-family: Sunshower Dreams;
-    font-size: clamp(40px, 10vw, 110px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    border-bottom: 1px solid #000;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 40px;
+/* Reset simple */
+* {
+  font-family: Inter, Arial, sans-serif;
+}
+
+/* Section principale */
+.contact {
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 20px;
+  /* border: 1px solid red; */
+}
+
+/* Contenu centré */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* border: 1px solid red; */
+  margin-top: 130px;
+}
+
+/* Titre */
+.title {
+  font-size: 80px;
+  font-weight: 800;
+  color: #1d1d1f;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+/* Sous-texte */
+.subtitle {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #6e6e73;
+  line-height: 1.5;
+}
+
+/* Bouton */
+.cta-btn {
+  margin-top: 10px;
+  padding: 14px 28px;
+  border-radius: 30px;
+  border: none;
+  background: #1d1d1f;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+    /* border: 1px solid red; */
+    font-size: 12px;
+    color: #8e8e93;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 60px;
+}
+
+/* Partie haute du footer */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+/* Icônes */
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 14px;
+  cursor: pointer;
+  color: #1d1d1f;
+  transition: opacity 0.3s;
+  height: 20px;
+  width: 20px;
+}
+
+.icon:hover {
+  opacity: 0.6;
+}
+
+/* Texte bas */
+.footer-bottom {
+  font-size: 10px;
+  line-height: 1.5;
+  color: #a1a1a6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 48px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 15px;
     text-align: center;
-
+  }
 }
-.footer{
-    width: 100%;
-    padding: 60px 20px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-.contenueLinks{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    width: 100%;
-    max-width: 500px;
-}
-.footer_down{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    width: 100%;
-    max-width: 1200px;
-
-}
-.mada{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 50px;
-}
-.linkHaut,
-.linkBas {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    flex: 1; 
-}
-.links{
-    width: 100%;             
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 12px 15px;
-    border-radius: 10px;
-}
-.texteHope{
-    font-family: Arial;
-    font-weight: 500;
-    font-size: 16px;
-    /* border: 1px solid red; */
-    line-height: 1.4;
-    margin: 0;
-}
-.seeya{
-    font-family: Arial;
-    font-weight: 500;
-    font-size: 28px;
-    /* border: 1px solid red; */
-    margin: 0;
-}
-.textes{
-    display: inline-flex;    
-    flex-direction: column;
-    gap: 0px;
-    /* border: 1px solid red; */
-}
-.cont{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 50px;
-    width: 400px;
-}
-.call{
-    width: 30px;
-    height:30px;
-    margin-left: 10px;
-    /* border: 1px solid red; */
-    padding-top: 5px;
-}
-.thanks{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 50px;
-    width: 400px;
-}
-
-@media screen and (max-width: 600px) {
-    .footer{
-        margin-top: 200px;
-    }
-    .nom{
-        font-size: 90px;
-        text-align: center;
-    }
-    .contenueLinks{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    gap: 20px;
-
-    width: auto; 
-    }
-
-    .footer_down{
-        flex-direction: column; 
-        align-items: center;
-        gap: 30px; 
-        text-align: center;
-    }
-    .links{
-        width: 400px;              
-        display: inline-flex;     
-        /* align-items: center;
-        justify-content: space-between;       */
-    }
-    .linkHaut,
-    .linkBas {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-        /* border: 1px solid red; */
-        width: fit-content;
-    }
-    .textes {
-        align-items: center;
-    }
-}
-
-
-

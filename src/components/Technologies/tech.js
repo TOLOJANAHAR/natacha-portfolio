@@ -14,19 +14,17 @@ export default function Technologie(){
     <div className='Tech'>
         <div className='TechDroite'>
           <p className='TechDroiteHaut'>
-            These are the COOOOOLLEST developpement tools that I use for my experiences. 
+            These are the COOOOOLLEST developpement tools that I use for my creations. 
           </p>
           <p className='TechDroiteBas'>
-          I use them for IA models, website developpement, and creative design.
+          I use them to make website developpement and creative design.
           </p>
           
         </div>
         <div className='TechGauche'>
             <Technologies texte={"Figma"} />
             <Technologies texte={"ADOBE XD"} />
-            <Technologies texte={"REACT JS"} />
-            <Technologies texte={"GRASP"} />
-            
+            <Technologies texte={"REACT JS"} />            
         </div>
     </div>
     )

@@ -84,8 +84,9 @@ export default function Nav(){
                     <p class="intro">Hello, I'm Natacha</p>
                   </div>
 
-                  <h1 class="title">
-                    UI / UX Designer • Currently at ALT — AI-powered fashion discovery app
+                  <h1 class="title-nav">
+                    Let's make your idea
+                    into immersive experiences that captivate and inspire results.
                   </h1>
                 </section>
 
