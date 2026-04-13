@@ -12,7 +12,7 @@ import licence from '../../image/licence.png';
 import tensorflow from '../../image/tensorflow.png';
 import wpa from '../../image/wpa.jpg'
 import hype from '../../image/hype.jpg'
-import cupidon from '../../image/cupidon.png'
+// import cupidon from '../../image/cupidon.png'
 import transverse from '../../image/transverse.png'
 import ssg from '../../image/ssg.png'
  

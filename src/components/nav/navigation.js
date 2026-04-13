@@ -6,7 +6,7 @@ import close from '../../image/x.png';
 import arrowGrey from '../../image/arrowGrey.png';
 import React, { useState } from "react";
 import { DownloadIcon } from 'lucide-react';
-import { createIcons } from 'lucide-react';
+// import { createIcons } from 'lucide-react';
 import './navigation.css'
 export default function Nav(){
   function Profils({ content, link }) {
