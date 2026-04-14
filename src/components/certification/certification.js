@@ -61,14 +61,9 @@ const Ceertification = forwardRef((props, certificationRef) => {
     <div>
       <div ref={certificationRef} className='certification'>
           <Certification navigation={"https://www.figma.com/proto/B7ALOCrKDzjB9fszN8kKBZ?node-id=0-1&t=cVDxAmZ30KtGxiOv-6"} link={"LINK TO DESIGN"} tag1={"#FREELANCE"} tag2={"#DESIGNER"} titre={"FLUXGROUP"} backgroundColor="#ffffff"/>
-          <Certification navigation={"https://www.hypeswiss.ch/"} link={"LINK TO WEBSITE"} tag1={"#HYPESWISS"} tag2={"#DESIGNER"} titre={"HYPESWISS"} backgroundColor="#ffffff"/>
+          <Certification navigation={"https://hype-software.com/"} link={"LINK TO WEBSITE"} tag1={"#HYPESOFTWARE"} tag2={"#DESIGNER"} titre={"HYPESWISS"} backgroundColor="#ffffff"/>
           <Certification navigation={"https://www.wpanet.org/"} link={"LINK TO WEBSITE"} tag1={"#DESIGN"} tag2={"#WPA"} titre={"WORLD PSY"} backgroundColor="#ffffff"/>
-          {/* <Certification navigation={"https://keypredict.com/"} link={"LINK TO WEBSITE "} tag1={"#FREELANCE"} tag2={"#DESIGNER"} titre={"KEYPREDICT"} backgroundColor="#ffffff"/> */}
       </div>
-      {/* <div ref={certificationRef} className='certification'>
-          <Certification navigation={"https://www.figma.com/proto/B7ALOCrKDzjB9fszN8kKBZ?node-id=0-1&t=cVDxAmZ30KtGxiOv-6"} link={"LINK TO DESIGN"} tag1={"#FREELANCE"} tag2={"#DESIGNER"} titre={"FLUXGROUP SARL"} backgroundColor="#ffffff"/>
-          <Certification navigation={"https://www.figma.com/design/tGVhM1Hy2nDHjqCuJb7OHy/Transverse?m=auto&t=cVDxAmZ30KtGxiOv-6"} link={"LINK TO DESIGN"} tag1={"#DESIGN"} tag2={"#MOBILEAPP"} titre={"TRANSVERSE"} backgroundColor="#ffffff"/>
-      </div> */}
 
     </div>
     )
