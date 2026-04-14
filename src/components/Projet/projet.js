@@ -172,10 +172,11 @@ function Projets({ typeProjet, titreProjet, id, source }) {
           <Projets typeProjet={figma} titreProjet={"Transverse"} source={transverse} id={4} />
           <Projets typeProjet={figma} titreProjet={"SSG SWISS"} source={ssg} id={5} />
           <Projets typeProjet={figma} titreProjet={"Lingusticas"} source={lingustica} id={6} />
-          <Projets typeProjet={figma} titreProjet={"Reserve"} source={reserve} id={7} />
           <Projets typeProjet={git} titreProjet={"Bento "} source={bento} id={8} />
           <Projets typeProjet={git} titreProjet={"Licence Plate Recognation "} source={licence} id={9} />
           <Projets typeProjet={git} titreProjet={"Tensorflow Training"} source={tensorflow} id={10} />
+          <Projets typeProjet={figma} titreProjet={"Reserve"} source={reserve} id={7} />
+
         </div>
     </div>
     )
