@@ -62,8 +62,8 @@ body{
     transition: all 0.8s ease-in-out;
 } */
 ::selection{
-    background-color: #A5E314;
-    color: rgb(226, 226, 226);
+    background-color: #000000;
+    color: rgb(186, 186, 186);
 }
 .expbox{
     /* background-color: red; */
